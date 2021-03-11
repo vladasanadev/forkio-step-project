@@ -1,0 +1,112 @@
+.header {
+  height: 90%;
+  .header-wrapper {
+    height: 103px;
+    background-color: #27262a;
+
+    .logo-wrapper {
+      .logo {
+        width: 43px;
+        height: 41px;
+        position: absolute;
+        top: 31px;
+        left: 16px;
+      }
+    }
+    .logo__text {
+      display: none;
+    }
+
+    .nav {
+      .menu {
+        margin: 0 30px 0 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+        padding-top: 103px;
+        a {
+          text-decoration: none;
+          margin: 0 10px;
+          line-height: 70px;
+          background-color: #333333;
+
+          color: $text-color;
+          display: block;
+          border-bottom: 1px solid #eaeaeb;
+          margin: 0 auto;
+          width: 90%;
+          @include nav-text();
+        }
+      }
+      .header-button {
+        width: 145px;
+        height: 38px;
+        text-align: center;
+        background-color: #8d81ac;
+        border-radius: 40px;
+        color: white;
+        position: absolute;
+
+        left: 50%;
+        margin-left: -72px;
+        margin-top: 33px;
+        padding-top: 8px;
+        font-style: 700;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      label {
+        font-size: 26px;
+        display: block;
+        width: 26px;
+        height: auto;
+        float: right;
+        cursor: pointer;
+        color: white;
+        margin: 35px 15px;
+      }
+      #toggle {
+        display: none;
+      }
+      #toggle:checked + .menu {
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        label {
+          display: none;
+        }
+        .menu {
+          display: block;
+          padding-top: 0;
+        }
+        .menu a {
+          margin: 0 20px;
+          display: inline;
+          line-height: 28px;
+          border-bottom: transparent;
+          line-height: 9rem;
+          background-color: transparent;
+        }
+        .header-button {
+          position: absolute;
+          top: -1%;
+          left: unset;
+          right: 2%;
+          margin: 24px 0px 0px 200px;
+        }
+        #toggle {
+          display: none;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      .logo-wrapper {
+        .logo {
+          top: 20px;
+        }
+      }
+    }
+  }
+}
