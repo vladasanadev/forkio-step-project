@@ -307,6 +307,91 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; } }
 
+.price {
+  background-color: #4a3b4e;
+  color: white; }
+
+.price-wrapper {
+  padding: 10px 20px; }
+
+.price__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  padding: 41px; }
+
+.item-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.11);
+  margin: 0 auto 14px auto;
+  max-width: 256px; }
+  .item-list__item .item-list__item-title {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 36px 0;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase; }
+  .item-list__item .item-list__item-price {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;
+    text-transform: uppercase; }
+  .item-list__item .item-list__item-price-details {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase; }
+  .item-list__item .item-list__item-line {
+    height: 5px;
+    background-color: #8D81AC;
+    margin: 50px auto 10px auto;
+    width: 60px; }
+  .item-list__item .item-list__item-features {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 2rem; }
+  .item-list__item .item-list__item-button {
+    background-color: rgba(255, 255, 255, 0.15); }
+
+.item-list__item--big {
+  max-width: 299px;
+  background-color: #463048;
+  opacity: 0.86; }
+
+.item-list__item-title--big {
+  background-color: rgba(0, 0, 0, 0.11);
+  padding: 47px 0; }
+
+.item-list__item-features--big {
+  padding-bottom: 75px; }
+
+@media (min-width: 768px) {
+  .price__item-list {
+    padding: 0  80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem 0rem; } }
+
+@media (min-width: 1100px) {
+  .price__item-list {
+    padding: 0  8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem 0rem; } }
+
 * {
   margin: 0;
   padding: 0;
