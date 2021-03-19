@@ -1,0 +1,204 @@
+.hereis-wrapper {
+  margin: 120px 25px 0;
+
+  .hereis-title {
+    grid-area: head;
+    color: rgba(141, 129, 172, 1);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .hereis-content {
+    grid-area: content;
+    .hereis-content-item {
+      margin-top: 35px;
+
+
+      .hereis-content-item-img-conteiner {
+        .hereis-content-item-img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+
+      .hereis-text {
+        .hereis-text-title {
+          color: rgba(50, 50, 50, 1);
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 16px;
+          margin-top: 27px;
+          text-align: center;
+        }
+        .hereis-text-description {
+          display: block;
+          color: rgba(132, 142, 151, 1);
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+          font-family: $font-lato;
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+}
+
+.hereis-img {
+  grid-area: footer;
+  height: 350px;
+  margin-top: 60px;
+  margin-left: 15px;
+  background-image: url("../img/hereis-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+
+
+
+
+
+@media (min-width: 481px) {
+  .hereis-wrapper {
+    margin: 120px 30px 0;
+
+    .hereis-title {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    .hereis-content {
+      .hereis-content-item {
+        display: flex;
+        margin-top: 55px;
+
+        .hereis-content-item-img-conteiner {
+          width: 112px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .hereis-content-item-img {
+            display: block;
+            margin: 10px 10px 10px 0;
+            object-fit: cover;
+          }
+        }
+
+        .hereis-text {
+          width: calc(100% - 112px - 20px);
+          .hereis-text-title {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            margin-top: 0;
+            text-align: start;
+          }
+          .hereis-text-description {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            font-family: $font-lato;
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .hereis-img {
+    min-height: 500px;
+    margin-top: 75px;
+    margin-left: 70px;
+    background-image: url("../img/hereis-footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+
+
+
+
+@media (min-width: 993px) {
+  .hereis {
+    position: relative;
+  }
+  .hereis-wrapper {
+    background: rgba(244, 244, 244, 1);
+    margin: 70px 0 0 0;
+    padding: 95px 0 33px 90px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "content  head"
+      "content  footer";
+
+    .hereis-title {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    .hereis-content {
+      .hereis-content-item {
+        display: flex;
+        margin-top: 55px;
+
+        .hereis-content-item-img-conteiner {
+          width: 112px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .hereis-content-item-img {
+            display: block;
+            margin: 10px 10px 10px 0;
+            object-fit: cover;
+          }
+        }
+
+        .hereis-text {
+          width: calc(100% - 112px - 20px);
+          .hereis-text-title {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            margin-top: 0;
+            text-align: start;
+          }
+          .hereis-text-description {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            font-family: $font-lato;
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .hereis-img {
+    min-height: 500px;
+    margin-top: 75px;
+    margin-left: 70px;
+    background-image: url("../img/hereis-footer.png");
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-size: auto;
+    //background-position: ;
+
+    position: absolute;
+    height: auto;
+    width: calc((100% - 70px) / 2);
+    right: 0;
+    top: 150px;
+  }
+}
