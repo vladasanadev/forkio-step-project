@@ -690,7 +690,7 @@ button {
     padding: 95px 0 33px 90px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "content  head" "content  footer"; }
+    grid-template-areas: "content  head" "content  footer"; }
     .hereis-wrapper .hereis-title {
       font-weight: bold;
       font-size: 48px;
