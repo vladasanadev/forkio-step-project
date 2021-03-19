@@ -1,0 +1,121 @@
+.revolut-wrapper {
+  margin: 50px 20px 0;
+
+  .revolut-title {
+    color: rgba(99, 92, 115, 1);
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-style: normal;
+    font-weight: bold;
+  }
+  .revolut-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $font-lato;
+    margin-top: 27px;
+  }
+
+  .revolut-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 90px;
+
+    .revolut-btn-item {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: rgb(36, 41, 46);
+      border: 1px solid #e1e3e8;
+      border-radius: 6px;
+      background: none;
+      margin: 20px 10px 0;
+      //font-family: 'Montserrat', sans-serif;
+
+      .revolut-btn-svg-text {
+        cursor: pointer;
+        background: #fafbfc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 12px;
+        font-size: 12px;
+        line-height: 20px;
+        border-right: 1px solid #e1e3e8;
+        border-radius: 0;
+
+        //border: 1px solid #e1e3e8;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(36, 41, 46);
+        margin: 0;
+
+        .revolut-btn-svg {
+          padding-right: 4px;
+        }
+
+        .revolut-btn-text {}
+      }
+      .revolut-btn-counter {
+        display: block;
+        margin: auto;
+        padding: 3px 12px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) {
+  .revolut-wrapper {
+    margin: 60px 40px 0;
+
+    .revolut-title {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    .revolut-text {
+      font-size: 21px;
+      line-height: 32px;
+      margin-top: 33px;
+    }
+
+    .revolut-btns {
+      margin-top: 26px;
+      margin-bottom: 100px;
+
+    }
+  }
+}
+
+@media (min-width: 993px) {
+  .revolut-wrapper {
+    margin: 60px 240px 0;
+
+    .revolut-title {
+      font-size: 54px;
+      line-height: 54px;
+    }
+    .revolut-text {
+      font-size: 21px;
+      line-height: 32px;
+      margin-top: 33px;
+    }
+
+    .revolut-btns {
+      margin-top: 26px;
+      margin-bottom: 70px;
+
+    }
+  }
+}
