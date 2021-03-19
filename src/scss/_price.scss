@@ -1,111 +1,289 @@
-.price
-{
-    background-color: #4a3b4e;
-    color: white;
+.price {
+  background-color: #4a3b4e;
+  color: white;
 }
-.price-wrapper
-{
-    padding: 10px 20px ;
+.price-wrapper {
+  padding: 10px 20px;
 }
-.price__title
-{
+.price__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  padding: 41px;
+}
+.price__item-list {
+}
+.item-list__item {
+  @include flex-center();
+  background-color: rgba(255, 255, 255, 0.11);
+  margin: 0 auto 14px auto;
+  max-width: 256px;
+  .item-list__item-title {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 36px 0;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .item-list__item-price {
     font-weight: bold;
-font-size: 28px;
-line-height: 42px;
-text-align: center;
-padding: 41px;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .item-list__item-price-details {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .item-list__item-line {
+    height: 5px;
+    background-color: #8d81ac;
+    margin: 50px auto 10px auto;
+    width: 60px;
+  }
+  .item-list__item-features {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 2rem;
+  }
+  .item-list__item-button {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 }
-.price__item-list
-{
-    
-}
-.item-list__item
-{
-    @include flex-center();
-    background-color:  rgba(255,255,255,0.11);
-    margin: 0 auto 14px auto;
-    max-width: 256px;
-    .item-list__item-title
-    {
-       background-color:  rgba(255,255,255,0.06); 
-       padding: 36px 0;
-       width: 100%;
-       font-weight: 400;
-        font-size: 24px;
-        line-height: 24px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .item-list__item-price
-    {
-        font-weight: bold;
-font-size: 60px;
-line-height: 90px;
-text-align: center;
-text-transform: uppercase;
-    }
-    .item-list__item-price-details
-    {
-        font-size: 14px;
-line-height: 16px;
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-    }
-    .item-list__item-line
-    {
-        height: 5px;
-        background-color:  #8D81AC;
-        margin: 50px auto 10px auto;
-        width: 60px;
-    }
-    .item-list__item-features
-    {
-        text-align: center;
-        font-size: 16px;
-        line-height: 18px;
-        margin: 2rem;
-    }
-    .item-list__item-button
-    {
-        background-color: rgba(255,255,255,0.15) ;
-    }
-}
-.item-list__item--big
-{
-    max-width: 299px;
-    background-color:  #463048;
-    opacity: 0.86;
+.item-list__item--big {
+  max-width: 299px;
+  background-color: #463048;
+  opacity: 0.86;
 }
 
 .item-list__item-title--big {
-    background-color: rgba(0,0,0,0.11);
-    padding: 47px 0;
+  background-color: rgba(0, 0, 0, 0.11);
+  padding: 47px 0;
 }
-.item-list__item-features--big
-{
-    padding-bottom: 75px;
+.item-list__item-features--big {
+  padding-bottom: 75px;
 }
 
 @media (min-width: 768px) {
-    .price__item-list
-{
-    padding: 0  80px;
+  .price__item-list {
+    padding: 0 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem 0rem;
-}
-    
+  }
 }
 @media (min-width: 1100px) {
-    .price__item-list
-{
-    padding: 0  8px;
+  .price__item-list {
+    padding: 0 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem 0rem;
+  }
 }
-    
+
+.price {
+  padding-bottom: 18px;
+  background-color: #4a3b4e;
+  background-image: url("../img/price-bg.png");
+  background-repeat: no-repeat;
+
+  background-position: top;
+  //background-size: auto 50%;
+  color: #ffffff;
+
+  .price-wrapper {
+    .price-title {
+      text-align: center;
+      margin-bottom: 32px;
+      color: rgba(255, 255, 255, 1);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 42px;
+    }
+
+    .price-content {
+      .price-content-card {
+        position: relative;
+        margin: 18px auto;
+        width: 257px;
+        height: 457px;
+        text-align: center;
+
+        background: rgba(255, 255, 255, 0.11);
+        mix-blend-mode: normal;
+
+        .price-content-card-user {
+          background: rgba(255, 255, 255, 0.11);
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 24px;
+          text-transform: uppercase;
+          height: 97px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .price-content-card-description {
+          .description-cost {
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 62px;
+            margin-top: 30px;
+          }
+          .description-cost-active {
+            font-size: 82px;
+            line-height: 84px;
+          }
+          .description-time {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 20px;
+          }
+
+          .description-line {
+            display: block;
+            //position: absolute;
+            width: 60px;
+            height: 5px;
+            margin: 38px auto 0;
+            //left: 120px;
+            //bottom: 0;
+            background: rgba(141, 129, 172, 1);
+          }
+
+          .description-product {
+            margin-top: 30px;
+            .description-product-item {
+              display: block;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 18px;
+              margin-top: 16px;
+            }
+          }
+          .description-btn {
+            margin: 37px auto 0;
+            box-sizing: border-box;
+
+            width: 163px;
+            height: 45px;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            cursor: pointer;
+          }
+          .description-btn-active {
+            margin-top: 83px;
+          }
+        }
+      }
+      .card-active {
+        width: 299px;
+        height: 560px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) {
+  .price {
+    .price-wrapper {
+      max-width: 930px;
+      margin: 0 auto;
+      .price-title {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 44px;
+      }
+
+      .price-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+        .price-content-card {
+          margin: 18px;
+
+          .price-content-card-user {
+          }
+
+          .price-content-card-description {
+            .description-cost {
+            }
+            .description-time {
+            }
+            .description-product {
+              .description-product-item {
+              }
+            }
+            .description-btn {
+            }
+          }
+        }
+
+        .card-active {
+          margin-left: -21px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) {
+  .price {
+    .price-wrapper {
+      max-width: 100%;
+      margin: 0;
+      .price-title {
+        font-size: 48px;
+        line-height: 50px;
+      }
+
+      .price-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 25px;
+        .price-content-card {
+          .price-content-card-user {
+          }
+
+          .price-content-card-description {
+            .description-cost {
+            }
+            .description-time {
+            }
+            .description-product {
+              .description-product-item {
+              }
+            }
+            .description-btn {
+            }
+          }
+        }
+
+        .card-active {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
 }
