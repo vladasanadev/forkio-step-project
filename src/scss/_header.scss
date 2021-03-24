@@ -38,6 +38,7 @@
         padding: 1rem;
         .logo {
           position: static;
+          margin-bottom: -11px;
         }
         .logo__text {
           display: inline-block;
@@ -201,15 +202,20 @@
     margin-left: auto;
   }
 
+  .logo__text:hover {
+    filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(342deg)
+      brightness(105%) contrast(106%);
+  }
+  .logo:hover {
+    filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(342deg)
+      brightness(105%) contrast(106%);
+  }
   .header .header-wrapper .nav .menu a:hover {
     color: white;
   }
   .header .header-wrapper .header-button:hover {
     background-color: white;
     color: $text-color;
-  }
-  .header .header-wrapper .logo-wrapper .logo__text:hover {
-    color: white;
   }
 }
 
