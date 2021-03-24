@@ -250,7 +250,8 @@ button {
 @media (min-width: 1200px) {
   .main__button:hover {
     background-color: white;
-    color: #8d81ac; } }
+    color: #8d81ac;
+    border: 2px solid #8d81ac; } }
 
 .about__wrapper {
   background-color: #4a3b4e;

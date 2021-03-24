@@ -65,5 +65,6 @@ button {
   .main__button:hover {
     background-color: white;
     color: $text-color;
+    border: 2px solid $text-color;
   }
 }
