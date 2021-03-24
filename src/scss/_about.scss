@@ -1,84 +1,70 @@
-.about__wrapper
-{
-    background-color: #4a3b4e;;
-    background-image: url("../img/testmonials-bg.png");
-    background-repeat: no-repeat;
-    
-    background-position: top;
-    background-size: auto 50%;
-    color: #FFFFFF;
-    padding: 50px 30px 70px;
+.about__wrapper {
+  background-color: #4a3b4e;
+  background-image: url("../img/testmonials-bg.png");
+  background-repeat: no-repeat;
+
+  background-position: top;
+  background-size: auto 50%;
+  color: #ffffff;
+  padding: 50px 30px 70px;
 }
-.about__title
-{
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 50px;
-    text-align: center;
+.about__title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
-.about__review-list{
-     
-    .review-list__item
-    {
-       @include flex-center();
-        margin-bottom: 45px;
-        .review-list__item-logo
-        {
-            margin-bottom: 50px;
-        }
-        .review-list__desc
-        {
-            @include italic-text();
-        }
+.about__review-list {
+  .review-list__item {
+    @include flex-center();
+    margin-bottom: 45px;
+    .review-list__item-logo {
+      margin-bottom: 50px;
     }
-    
-}
-.about__subtitles
-{
-font-family: Lato;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-text-align: center;
-color: #A291A5;
-}
-.about__subtitles-line
-{
-    height: 2px;
-    width: 95%;
-    margin: 30px auto;
-    background-color: #645766;
-}
-
-
-@media (min-width: 768px)
-{
-    .about__wrapper{
-        background-size: cover;
+    .review-list__desc {
+      @include italic-text();
     }
-    .about__title{
-        margin: 45px;
-    }
- .about__review-list {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr 1fr 1fr;
-         gap: 1rem 5rem;
-         .review-list__item
-         {
-             align-self: baseline;
-         }
- }
-
+  }
+}
+.about__subtitles {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #a291a5;
+}
+.about__subtitles-line {
+  height: 2px;
+  width: 95%;
+  margin: 30px auto;
+  background-color: #645766;
 }
 
-@media (min-width: 1000px)
-{
- .about__review-list {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
- }
+@media (min-width: 768px) {
+  .about__wrapper {
+    background-size: cover;
+  }
+  .about__title {
+    margin: 45px;
+  }
+  .about__review-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 5rem;
+    .review-list__item {
+      align-self: baseline;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .about__review-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }

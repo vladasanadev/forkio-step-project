@@ -28,7 +28,8 @@
       display: flex;
       padding: 1rem; }
       .header .header-wrapper .logo-wrapper .logo {
-        position: static; }
+        position: static;
+        margin-bottom: -11px; }
       .header .header-wrapper .logo-wrapper .logo__text {
         display: inline-block;
         font-family: "Lato", sans-serif;
@@ -152,13 +153,15 @@
     max-width: 52rem;
     margin-right: 4rem;
     margin-left: auto; }
+  .logo__text:hover {
+    filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(342deg) brightness(105%) contrast(106%); }
+  .logo:hover {
+    filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(342deg) brightness(105%) contrast(106%); }
   .header .header-wrapper .nav .menu a:hover {
     color: white; }
   .header .header-wrapper .header-button:hover {
     background-color: white;
-    color: #8d81ac; }
-  .header .header-wrapper .logo-wrapper .logo__text:hover {
-    color: white; } }
+    color: #8d81ac; } }
 
 .header-button {
   width: 145px;
@@ -244,13 +247,18 @@ button {
   color: #848e97;
   margin-bottom: 2rem; }
 
+@media (min-width: 1200px) {
+  .main__button:hover {
+    background-color: white;
+    color: #8d81ac; } }
+
 .about__wrapper {
   background-color: #4a3b4e;
   background-image: url("../img/testmonials-bg.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 50px 30px 70px; }
 
 .about__title {
@@ -286,7 +294,7 @@ button {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  color: #A291A5; }
+  color: #a291a5; }
 
 .about__subtitles-line {
   height: 2px;
@@ -690,7 +698,7 @@ button {
     padding: 95px 0 33px 90px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "content  head" "content  footer"; }
+    grid-template-areas: "content  head" "content  footer"; }
     .hereis-wrapper .hereis-title {
       font-weight: bold;
       font-size: 48px;
