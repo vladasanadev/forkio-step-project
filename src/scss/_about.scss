@@ -35,12 +35,8 @@
   line-height: 21px;
   text-align: center;
   color: #a291a5;
-}
-.about__subtitles-line {
-  height: 2px;
-  width: 95%;
-  margin: 30px auto;
-  background-color: #645766;
+  padding: 1rem;
+  border-bottom: 0.2rem solid rgba(100, 87, 102, 0.2);
 }
 
 @media (min-width: 768px) {
