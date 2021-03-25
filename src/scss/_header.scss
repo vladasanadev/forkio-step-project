@@ -154,6 +154,7 @@
       @media (min-width: 768px) {
         .logo__text {
           display: block;
+          cursor: pointer;
         }
         label {
           display: none;
@@ -177,7 +178,7 @@
           margin: 0;
         }
         .menu__item:hover {
-          border-left: 0.8rem solid transparent;
+          border: none;
         }
 
         #toggle {
@@ -202,13 +203,11 @@
     margin-left: auto;
   }
 
-  .logo__text:hover {
-    filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(342deg)
-      brightness(105%) contrast(106%);
+  .header .header-wrapper .logo-wrapper .logo__text:hover {
+    color: white;
   }
   .logo:hover {
-    filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(342deg)
-      brightness(105%) contrast(106%);
+    filter: brightness(0) invert(1);
   }
   .header .header-wrapper .nav .menu a:hover {
     color: white;
